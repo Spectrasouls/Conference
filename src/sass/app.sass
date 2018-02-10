@@ -1,0 +1,86 @@
+@import 'global.sass'
+@import '_mixin.sass'
+
+.hello
+  display: flex
+  justify-content: center
+
+.header-title
+  font-size: 32px
+  color: #666666
+  margin: 50px
+  text-align: left
+.rooms-title
+  font-size: 20px
+  color: #333
+
+.container
+  display: flex
+  justify-content: space-between
+
+.conversation
+  display: flex
+  justify-content: center
+  flex-direction: column
+.month-list
+  background-color: $gray
+.calendary-month
+  text-align: center
+  padding-bottom: 20px
+.calendar
+  width: 85%
+.calendary-days
+  .calendary-days-list
+    justify-content: space-around
+    .items
+      padding: 5px 30px
+    .items:nth-child(2)
+      padding: 5px 30px 0 10px
+.rooms
+ width: 15%
+
+.calendary-days-list
+  display: flex
+  .items
+    padding: 0 2px
+    display: inline-flex
+.conversation-green
+  background-color: $green
+  display: flex
+  justify-content: space-around
+  align-items: center
+.conversation-green__title
+  width: 20%
+  padding: 10px 10px
+
+.conversation-time
+  display: flex
+  justify-content: space-around
+  padding: 5px 5px 15px 15px
+  .one-column
+    padding: 5px 5px
+    .first
+      display: block
+      cursor: pointer
+      &:hover
+        background-color: rgba(185, 170, 170, 0.6)
+.second-column
+  padding: 5px 5px
+  .second
+    display: block
+    cursor: pointer
+    &:hover
+      background-color: rgba(185, 170, 170, 0.6)
+
+.conversation-red
+  background-color: $red
+  height: 90px
+
+.conversation-blue
+  background-color: $blue
+  height: 90px
+
+.conversation-violet
+  background-color: $violet
+  height: 90px
+
